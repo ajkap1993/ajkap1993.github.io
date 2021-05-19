@@ -1,3 +1,4 @@
+const navBarHtml = `
 <html>
 
 <head>
@@ -16,3 +17,10 @@
 </div>
 
 </html> 
+`
+
+window.onload = async () => {
+    const navBar = document.createElement('div');
+    navBar.innerHTML = navBarHtml;
+    document.body.insertBefore(navBar, document.body.firstChild);
+}
