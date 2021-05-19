@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <script>
+        window.onload = async () => {
+            const navBar = await (await fetch('navbar.html')).text();
+            document.querySelector('#navbar').innerHTML = navBar;
+        }
+    </script>
+</head>
+
+<body>
+    <div id='navbar'>
+
+    </div>
+    <div>
+        THREAT TRENDS HERE
+    </div>
+</body>
+
+</html>
